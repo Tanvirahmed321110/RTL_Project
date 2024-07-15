@@ -1,0 +1,145 @@
+@import './variable.css';
+@import './header_footer.css';
+@import './brand_tab.css';
+
+
+/********************
+******  Global Css  *****
+*********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font_common);
+    color: var(--dark-color); 
+    font-size: var(--xs-font);
+    background-color: var(--white_color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font_common);
+    color: var(--white-color);
+}
+a:hover{
+    color: inherit;
+}
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    font-family: var(--font_common);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input, textarea {
+    font-family: var(--font_common);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+input::placeholder{
+    color: var(--dark-color);
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*______  Bg color classes  _______*/
+.bg-dark { background-color: var(--dark_color) ; }
+.bg-primary { background-color: var(--primary_color)!important; }
+.bg-secondary { background-color: var(--secondary_color) !important; }
+.bg-black { background-color: var(--black_color) !important; }
+.bg-white { background-color: var(--white_color) !important; }
+
+/*______  Text color classes  _______*/
+.text-dark { color: var(--dark_color) !important; }
+.text-primary { color: var(--primary_color) !important; }
+.text-secondary { color: var(--secondary_color) ; }
+.text-black { color: var(--black_color) ; }
+.text-white { color: var(--white_color) ; }
+
+
+/*_____ Header Font Size _____*/
+.header_lg-_font,
+.header_xl_font,
+.header_xxl_font{
+    font-weight: var(--weight_bold);
+    font-family: var(--font_header) !important;
+}
+.header_xxl_font{
+    font-size: var(--header-xxl-font);
+    line-height: 100 px;
+}
+.header_lg-_font{
+    font-size: var(--header-lg-font);
+}
+.header_xl_font{
+    font-size: var(--header-xl-font);
+}
+/*_____ Button Class _____*/
+.btn{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: var(--sm-font);
+    text-wrap: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn.btn-outline{
+    background-color: transparent;
+    border: 1px solid var(--white_color);
+}
+.btn.btn-lg{
+    padding: 13px 31px ;
+    font-family: var(--lg-font);
+}
+.btn.btn-xl{
+    padding: 15px 36px;
+    font-size: var(--sm-font);
+}
+.btn.btn-fill{
+    color: var(--dark_2);
+    background-color: var(--white_color);
+}
+.btn.btn-fill:hover,
+.btn.btn-outline:hover{
+    background-color: #f1f1f1;
+}
+
+.border{
+    border: 1px solid #f1f1f1;
+}

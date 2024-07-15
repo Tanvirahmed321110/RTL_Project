@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'buDrakonit';
+    src: url('../fonts/buDrakonit21-Bold.eot');
+    src: url('../fonts/buDrakonit21-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/buDrakonit21-Bold.woff2') format('woff2'),
+        url('../fonts/buDrakonit21-Bold.woff') format('woff'),
+        url('../fonts/buDrakonit21-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

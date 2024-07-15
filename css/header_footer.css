@@ -1,0 +1,338 @@
+@import './variable.css';
+
+
+
+header{
+    color: var(--white_color);
+}
+
+.header_top{
+    padding: 10px 0 ;
+    background-color: gray ;
+    padding-right: 164px ;
+}
+
+
+
+.header-top_nav li a{
+    content: '';
+    position: relative ;
+    font-weight: var(--font_regular);
+}
+.header-top_nav li a::after{
+    content: '';
+    position: absolute ;
+    bottom: -2px;;
+    left: 50%;
+    right: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: var(--white_color);
+    transition: .2s linear;
+}
+.header-top_nav li a:hover::after{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+
+
+/*__________  Main Header  ___________*/
+.main_header{
+    padding-top: 13px;
+    position: absolute;
+    top: 40px;
+    left:0;
+    right: 0;
+    background-color: transparent !important;
+}
+.main-header-right{
+    gap:69px;
+}
+.main-header-right-nav{
+    gap: 29px;
+}
+.main-header-right-nav .sign-in{
+    display: none;
+}
+
+/* ______ mobile-menu-button _____ */
+.mobile-menu-button{
+    display: none;
+}
+
+/*___ main header left ___*/
+.main_header_left{
+    gap:8px;
+}
+.main_header_left .cart_icon{
+    width: 20px;
+}
+
+
+.main_header_left .btn-outline:hover{
+    background-color: var(--dark_color) ;
+}
+
+
+
+/*__________  Banner Start Here  __________*/
+.banner{
+    background-image: url('../image/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:678px;
+    width: 100%;
+}
+.banner .banner-head{
+    display: block;
+}
+.banner-head.banner-head-mobile{
+    display: none;
+}
+.banner-right-content{
+    gap:16px;
+    padding-right: 58px;
+}
+
+
+.mobile-search-header{
+    display: none;
+}
+.banner .search{
+    gap: 16px;
+    max-width: 310px;
+    width: 100%;
+    position: relative;
+    border-radius: 40px;
+    height: 50px;
+    background-color: var(--white_color);
+}
+.banner .search input{
+    width: calc(100% - 106px);
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+}
+
+.banner .search button img{
+    width: 18px;
+}
+.banner-right-content a,.banner-right-content p{
+    text-decoration: underline;
+}
+
+
+/*____ Banner Footer  ____*/
+.banner-footer{
+    border-radius: 17px;
+    max-width: 1023px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--white_color);
+    padding: 18px 27px;
+    margin-top: -79px;
+    font-size: 16px;
+    box-shadow: 0px 4px 14px 0px #0000001A;
+    z-index: 1;
+}
+
+.banner-footer button{
+    border: 1px solid var(--secondary_color);
+}
+
+
+
+/* _______ Footer _______ */
+.footer{
+    background-color: var(--dark_color);
+    padding: 20px 0 44px 0;
+    color: var(--white_color);
+    margin-top: 85px;
+}
+.footer-bottom{
+    margin-top: 69px;
+}
+
+
+.border-right{
+    height: 12px;
+    width: 1px ;
+    background-color: var(--white_color);
+}
+
+/**********************************
+*****__  Tablet Device max 1024  __*****
+***********************************/
+
+@media  screen and (max-width:1024px) {
+    
+    /*______ Mobile Menu Button  ______ */
+    .mobile-menu-button{
+        display: block;
+    }
+    
+    /*______  Header Top  _______ */
+    .header_top{
+        display: none;
+    }
+    
+    /*______  Main Header   _______ */
+    header{
+        position: relative;
+    }
+    .main_header {
+        padding-top: 24px;
+        top: 0;
+    }
+    
+    .main-header-right-nav .sign-in{
+        display: block;
+    }
+    .main-header-right-nav{
+        position: absolute;
+        top: 0;
+        right: 48px;
+        display: none;
+        background-color: var(--dark_color);
+        padding: 15px 15px;
+        border-radius: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        width: 200px;
+        transition: .2s linear;
+        opacity: 0;
+        z-index: 2;
+    }
+    .main-header-right-nav.active{
+        top: 55px;
+        display: flex;
+        transition: .2s ease-in-out;
+        right: 48px;
+        opacity: 1;
+    }
+    .main-header-right-nav li{
+        width: 100%;
+        border-bottom: 1px solid transparent;
+        padding: 5px ;
+        border-radius: 5px;
+    }
+    .main-header-right-nav li:hover{
+        background-color: gray;
+    }
+    .main-header-right-nav .sign-in{
+        width: 100% !important;
+        padding: 8px 20px;
+    }
+    .main-header-right {
+        gap: 8px;
+    }
+    
+    
+    
+    .main_header_left .sign-in{
+        display: none ;
+    }
+    
+    
+    /* ________ Banner ________ */
+    .banner{
+        height: 761px;
+    }
+
+    .banner-footer{
+        padding: 15px 15px;
+        margin-top: -73px;
+    }
+    .banner-footer .banner-footer-content{
+        font-size: var(--xs-font);
+    }
+    .banner-footer button{
+        font-size: var(--xs-font);
+    }
+    
+}
+
+
+
+
+
+/**********************************
+*****__  Tablet Device max 766  __*****
+***********************************/
+
+@media screen and (max-width: 766px){
+    /*_____ Main Header _____*/
+    .main_header {
+        padding-top:8px;
+    }
+    .main_header .container {
+        padding: 0 14px 0 9px;
+    }
+    
+    /*____ Banner ____ */
+    .banner{
+        background-position: right center;
+        height: 398px;
+        background-size: unset;
+    }
+    
+    .banner .banner-right-content .banner-head{
+        display: none;
+    }
+    .banner .banner-head-mobile{
+        display: block;
+        padding-top: 95px;
+        text-align: center;
+    }
+    .mobile-search-header{
+        display: block;
+    }
+    
+    /*_____  Banner Content ______*/
+    .banner-right-content-wrapper{
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        background-color: gray;
+        height: auto;
+        display: unset !important;
+    }
+    
+    .banner-right-content{
+        position: relative;
+        background-color: white;
+        max-width: 340px; 
+        margin: 0 auto;
+        flex-direction: column;
+        gap:0;
+        border-radius: 16px;
+        padding: 22px 19px 22px 23px;
+        color: var(--dark_color);
+        margin-top: 21px;
+        align-items: unset;
+        justify-content: unset;
+        border: 1px solid red;
+    }
+    .banner-right-content .search{
+        border: 1px solid #d9d9d9;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+    
+    .banner-right-content .banner-head{
+        display: none;
+    }
+    .banner-right-content .banner-content-p{
+        position: absolute;
+        bottom: -50px;
+        color: var(--white_color);
+        right: 0;
+        
+    }
+    .banner-footer{
+        display: none !important;
+    }
+}
