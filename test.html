@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Right to left for Hebrew */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.menu-section {
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.menu-section h2 {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.menu h3 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.menu-section.highlighted h2, .menu-section.highlighted h3, .menu-section.highlighted ul li {
+    color: #f90;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #666;
+    curs
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2>מידע למתקדמים ללימוד</h2>
+            <div class="menu">
+                <h3>מרכז</h3>
+                <ul>
+                    <li>אוניברסיטת תל אביב</li>
+                    <li>המרכז הבינתחומי הרצליה</li>
+                    <li>מכללת רמת גן</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>שרון</h3>
+                <ul>
+                    <li>האוניברסיטה הפתוחה</li>
+                    <li>מכללת נתניה</li>
+                    <li>מכללת רופין</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2>מידע מקצועי ללימוד</h2>
+            <div class="menu">
+                <h3>דרום</h3>
+                <ul>
+                    <li>אוניברסיטת בן גוריון</li>
+                    <li>המכללה האקדמית להנדסה סמי שמעון</li>
+                    <li>מכללת ספיר</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>ירושלים</h3>
+                <ul>
+                    <li>האוניברסיטה העברית</li>
+                    <li>האקדמיה לאומנות בצלאל</li>
+                    <li>מכון לב</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>צפון</h3>
+                <ul>
+                    <li>אוניברסיטת חיפה</li>
+                    <li>המכללה האקדמית עמק יזרעאל</li>
+                    <li>מכללת תל חי</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-section highlighted">
+            <h2>מידע מותאם ללימוד</h2>
+            <div class="menu">
+                <h3>שרון</h3>
+                <ul>
+                    <li>מכללת רופין</li>
+                    <li>מכללת נתניה</li>
+                    <li>מכללת רמת גן</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>דרום</h3>
+                <ul>
+                    <li>אוניברסיטת בן גוריון</li>
+                    <li>המכללה האקדמית להנדסה סמי שמעון</li>
+                    <li>מכללת ספיר</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button>הצג הכל</button>
+    </div>
+</body>
+</html>
