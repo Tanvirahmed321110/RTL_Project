@@ -64,7 +64,7 @@ header{
 
 /*___ main header left ___*/
 .main_header_left{
-    gap:8px;
+    gap:8px;  
 }
 .main_header_left .cart_icon{
     width: 20px;
